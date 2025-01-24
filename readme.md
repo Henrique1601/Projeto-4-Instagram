@@ -1,4 +1,5 @@
 # Cópia do Instagram
   
 ## Curso de Formação front end do Matheus Battisti
-![previa](./img/image.png)
+
+![ previa](image.png)

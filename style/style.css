@@ -23,15 +23,24 @@
   width: 500px;
   height: auto;
 }
+/* Two Contents */
+
+.two-contents {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
 
 /* Main content */
 .main-right-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
+  /* width: fit-content; */
   flex-direction: column;
-  height: 100vh;
+  height:75vh;
 }
 
 .right-content {
@@ -59,9 +68,9 @@
 
 .login input {
   width: 75%;
-  padding: 10px;
-  height: 55px;
-  margin-bottom: 15px;
+  padding: 5px;
+  height: 50px;
+  margin-bottom: 10px;
   border-radius: 5px;
 }
 
@@ -72,23 +81,51 @@
   margin-bottom: 25px;
 }
 
-.login h1 {
-  font-size: 50px;
-  margin-bottom: 45px;
+.login input[type="button"]:hover{
+  cursor: pointer;
 }
 
-.login h1,
-.login p {}
+.login  {
 
+  border: 1px solid #333;
+
+}
+.separator {
+  position: relative;
+}
+
+.line{
+  width: 268px;
+  border-top:1px solid #dbdbdb;
+  margin-bottom: 10px;
+}
+
+.login h2{
+  position: absolute;
+  text-transform: uppercase;
+  color: #bbb;
+  background-color: #fff;
+  top: -7px;
+  width: 50px;
+  text-align: center;
+  left: 105px;
+  font-size: 18px;
+}
+.logo-instagram img{
+  width: 250px;
+  height: 100px;
+  padding-bottom: 20px;
+}
 .facebook {
   display: flex;
   margin: 20px 0px 20px 0px;
 }
 
-.login img {
+.login .facebook img {
   width: 30px;
   height: 30px;
 }
+
 
 .Singup {
   display: flex;
@@ -102,9 +139,11 @@
   text-align: center;
   border: 1px solid #333;
   font-size: 20px;
-}
+  gap: 15px;
+  }
 
-.forgot-password a {
+.forgot-password {
+  margin-top: 25px;
   color: rgb(57, 57, 174);
   font-size: 20px;
 }
@@ -130,4 +169,37 @@
   cursor: pointer;
 }
 
-.footer {}
+footer{ 
+  display: flex; 
+  align-items: center;
+  height: 100px;
+  align-self: last baseline;
+  justify-content: center;
+  /* position: absolute; */
+  /* bottom: 12%; */
+  width: fit-content;
+  flex-wrap: wrap;
+}
+
+.footer-main{
+  display: block;
+  text-align: center;
+}
+.footer-main p{
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+.list-content{
+  gap: 15px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+  letter-spacing: .5px;
+  width: fit-content;
+  color:#8EAACD ;
+}
+
